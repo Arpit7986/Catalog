@@ -1,5 +1,3 @@
-
-
 # Shamir's Secret Sharing - Node.js Application
 
 This application implements a simplified version of Shamir's Secret Sharing algorithm using Node.js. It reads multiple JSON files containing roots of a polynomial, decodes the values, and computes the constant term of the polynomial.
@@ -13,8 +11,11 @@ This application implements a simplified version of Shamir's Secret Sharing algo
 
 1. **Clone the repository** (if applicable):
 
-npm i
-node app.js
+  
+Install dependencies:
+
+
+npm install
 Prepare the input JSON files:
 
 Create JSON files named input1.json, input2.json, input3.json, etc. in the same directory as app.js. Each file should follow the specified format:
@@ -47,6 +48,7 @@ Run the application:
 
 Open your terminal or command prompt and navigate to the directory where app.js is located. Use the following command to execute the application:
 
+
 node app.js
 Output
 The application will print the number of roots, the required roots, the decoded points, and the secret constant term (c) for each JSON file processed.
@@ -63,3 +65,5 @@ Key: 6, Base: 4, Encoded Value: 213, Decoded Value: 39
 
 Decoded points: [ [ 1, 4 ], [ 2, 7 ], [ 3, 12 ], [ 6, 39 ] ]
 The secret (constant term c) is: 13
+Contributing
+If you'd like to contribute to this project, please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
